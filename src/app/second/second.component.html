@@ -1,0 +1,12 @@
+<h1>Second Component works!</h1>
+ 
+    <!-- <div *ngFor= "let prod of products"> {{ prod.id +' - '+ prod.nome}} </div> -->
+
+    <div *ngFor= "let prod of products"> 
+        <app-details 
+        [product] = 'prod'
+        (alertProduct) = 'alertProduct(prod.preco)'>   
+
+        </app-details>    
+    </div>
+    

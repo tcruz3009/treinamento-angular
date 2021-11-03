@@ -1,0 +1,11 @@
+<h1 [style.color]="fontColor">{{title}}</h1>
+
+<input type="text" [disabled]="isDisable" id="1" [(value)] = 'myValue'>
+<p>{{myValue}}</p>
+
+<button (click) = "alert()">EventBind</button>
+<nav>
+  <a routerLink="first" >FIRST COMPONENT</a>
+  <a routerLink="second" >SECOND COMPONENT</a>
+</nav>
+<router-outlet> </router-outlet>
